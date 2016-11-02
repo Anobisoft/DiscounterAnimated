@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qjp-34-78d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="F0b-nG-GKS">
+            <objects>
+                <viewController id="Qjp-34-78d" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ai-Ek-oIA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vvt-0D-I0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bv9-JA-dAt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucq-ZR-jf8" userLabel="priceView">
+                                <rect key="frame" x="279" y="40" width="76" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8S-U8-ffD">
+                                        <rect key="frame" x="2" y="5" width="72" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2156862745" green="0.74117647060000003" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="3Fp-CC-SKv"/>
+                                    <constraint firstAttribute="height" constant="30" id="K7j-CC-pfh"/>
+                                    <constraint firstItem="X8S-U8-ffD" firstAttribute="centerY" secondItem="Ucq-ZR-jf8" secondAttribute="centerY" id="LNc-eS-McE"/>
+                                    <constraint firstItem="X8S-U8-ffD" firstAttribute="centerX" secondItem="Ucq-ZR-jf8" secondAttribute="centerX" id="mjs-Kb-yEM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="7TK-wH-g64">
+                                <rect key="frame" x="301" y="67" width="52" height="24"/>
+                                <subviews>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="NNP-tV-Bjm">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="24"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discounter" translatesAutoresizingMaskIntoConstraints="NO" id="she-7i-x11">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLn-bF-wQ5">
+                                                <rect key="frame" x="4.5" y="3" width="32" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="she-7i-x11" secondAttribute="trailing" id="ADX-NQ-sFF"/>
+                                            <constraint firstItem="TLn-bF-wQ5" firstAttribute="centerX" secondItem="NNP-tV-Bjm" secondAttribute="centerX" constant="-6" id="JBI-C1-076"/>
+                                            <constraint firstItem="she-7i-x11" firstAttribute="top" secondItem="NNP-tV-Bjm" secondAttribute="top" id="dIW-7h-k8y"/>
+                                            <constraint firstItem="TLn-bF-wQ5" firstAttribute="centerY" secondItem="NNP-tV-Bjm" secondAttribute="centerY" id="gtY-kA-dPd"/>
+                                            <constraint firstItem="she-7i-x11" firstAttribute="leading" secondItem="NNP-tV-Bjm" secondAttribute="leading" id="pAh-lh-Rca"/>
+                                            <constraint firstAttribute="bottom" secondItem="she-7i-x11" secondAttribute="bottom" id="zas-md-DT7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="transform" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NNP-tV-Bjm" secondAttribute="trailing" id="WMA-gY-X2z"/>
+                                    <constraint firstItem="NNP-tV-Bjm" firstAttribute="leading" secondItem="7TK-wH-g64" secondAttribute="leading" id="asa-fb-Bf7"/>
+                                    <constraint firstItem="NNP-tV-Bjm" firstAttribute="top" secondItem="7TK-wH-g64" secondAttribute="top" id="b1J-p3-t42"/>
+                                    <constraint firstAttribute="height" constant="24" id="nLh-5U-wg7"/>
+                                    <constraint firstAttribute="bottom" secondItem="NNP-tV-Bjm" secondAttribute="bottom" id="u3I-ST-lI0"/>
+                                    <constraint firstAttribute="width" constant="52" id="xZ5-8S-3gy"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeA-Tf-Y5j" userLabel="ButtonView">
+                                <rect key="frame" x="115" y="40" width="145" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lTV-VF-xw2">
+                                        <rect key="frame" x="0.0" y="2" width="145" height="26"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="12" minY="4" maxX="12" maxY="4"/>
+                                        <state key="normal" title="Restart animation"/>
+                                        <connections>
+                                            <action selector="restartTap:" destination="Qjp-34-78d" eventType="touchUpInside" id="q5a-ib-coV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lTV-VF-xw2" secondAttribute="trailing" id="1Hj-Sg-utq"/>
+                                    <constraint firstItem="lTV-VF-xw2" firstAttribute="leading" secondItem="PeA-Tf-Y5j" secondAttribute="leading" id="Fup-5D-lqk"/>
+                                    <constraint firstItem="lTV-VF-xw2" firstAttribute="centerY" secondItem="PeA-Tf-Y5j" secondAttribute="centerY" id="axY-c6-Fg6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7TK-wH-g64" firstAttribute="trailing" secondItem="X8S-U8-ffD" secondAttribute="trailing" id="6RC-ZD-kWY"/>
+                            <constraint firstItem="PeA-Tf-Y5j" firstAttribute="top" secondItem="Ucq-ZR-jf8" secondAttribute="top" id="AgH-xq-dnJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ucq-ZR-jf8" secondAttribute="trailing" constant="20" id="IO1-hW-m4u"/>
+                            <constraint firstItem="Ucq-ZR-jf8" firstAttribute="top" secondItem="2ai-Ek-oIA" secondAttribute="bottom" constant="20" id="OP9-sD-BJm"/>
+                            <constraint firstItem="PeA-Tf-Y5j" firstAttribute="height" secondItem="Ucq-ZR-jf8" secondAttribute="height" id="S5X-Xv-XiJ"/>
+                            <constraint firstItem="PeA-Tf-Y5j" firstAttribute="centerX" secondItem="Bv9-JA-dAt" secondAttribute="centerX" id="f7V-QI-rHW"/>
+                            <constraint firstItem="7TK-wH-g64" firstAttribute="centerY" secondItem="Ucq-ZR-jf8" secondAttribute="centerY" constant="24" id="p8A-fe-GoZ"/>
+                            <constraint firstItem="Ucq-ZR-jf8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PeA-Tf-Y5j" secondAttribute="trailing" constant="16" id="te6-rt-BQ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="discounterAnimatedView" destination="7TK-wH-g64" id="rXo-ch-qxf"/>
+                        <outlet property="discounterView" destination="NNP-tV-Bjm" id="VPk-bV-KJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94P-l0-UF4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discounter" width="59" height="24"/>
+    </resources>
+</document>
